@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Wheel of Fortune Bingo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="chart-container">
+    <div id="chart"></div>
+    <div id="question">
+      <h1></h1>
+    </div>
+  </div>
+  <div id="exam">
+    <span v-for="examAnswer in ExamAnswers" v-on:click="attemptAnswer(examAnswer)">
+      {{examAnswer.label}}
+    </span>
+  </div>
+</body>
+
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script type="text/javascript" src="data.js" charset="utf-8"> </script>
+<script type="text/javascript" src="exam.js" charset="utf-8"> </script>
+<script type="text/javascript" src="app.js" charset="utf-8"> </script>
+</html>
