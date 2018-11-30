@@ -14,9 +14,9 @@ var $$exam = new Vue({
 
     attemptAnswer (answer) {
       if (answer.correct) {
-        alert('Answer was correct!');
+        toastr.success('Correct Answer!');
       } else {
-        alert('Anwer was wrong');
+        toastr.error('Wrong Answer.');
       }
     }
   },
